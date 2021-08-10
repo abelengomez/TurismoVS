@@ -1,0 +1,302 @@
+@{
+    ViewData["Title"] = "Preguntas";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PACHA TOURS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/2415dd1288.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1><a class="navbar-brand mr-lg-5" href="home.html">
+            Pacha Tours
+          </a></h1>
+                <!-- si tengo logo la imagen la pongo asi   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+         
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Preguntas">Preguntas frecuentes<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- toggle cambiar por tema oscuro o claro -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle cambiar por tema oscuro o claro -->
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- barra -->
+    <section class="w3l-about-breadcrumb text-left">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container py-2">
+                <h2 class="title">Preguntas</h2>
+                    <ul class="breadcrumbs-custom-path mt-2">
+                        <li><a href="#url">Inicio</a></li>
+                        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Contacto </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //barra -->
+    <section class="w3l-content-6 py-5">
+    <div class="container py-lg-5">
+        <h1 class="hny-title">PREGUNTAS FRECUENTES</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 content-6-left pr-lg-5">          
+                <h3 class="sub-title">Sobre Excusiones</h3>
+                <h6>¿Nos pasan a buscar por el hotel?</h6>
+            </div>
+            <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
+                <p class="mb-3">Para el comienzo de las excursiones, lo pasamos a buscar por su hotel o lo citamos en la plaza principal de la ciudad </p>
+                <p class="mb-3">En caso de búsqueda por hoteles es solo por hoteles céntricos. (Hasta 8 cuadras alrededor de la plaza principal). Para los hoteles o casas particulares fuera de esta zona se coordinará un punto de encuentro el cual será indicado de acuerdo a la excursión. </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 content-6-left pr-lg-5">          
+                <h3 class="sub-title">Formas de Pago</h3>
+                <h6>¿Cuáles son los medios de pago disponibles?</h6>
+            </div>
+            <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
+                <p class="mb-3">Te ofrecemos distintos medios de pago.
+Podés pagar Tarjetas de Crédito, con Tarjeta de Débito a través de Mercado Pago, Transferencia Bancaria, Depósito Bancario y si lo preferís, podés pagar directamente en nuestra agencia al llegar.</p>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 content-6-left pr-lg-5">          
+                <h3 class="sub-title">Sobre Excusiones</h3>
+                <h6>¿Debo llevar ropa especial o algún tipo de equipamiento?</h6>
+            </div>
+            <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
+                <p class="mb-3">Durante las excursiones visitamos algunas zonas de microclimas, significa que en pleno invierno visitaremos zonas cálidas, y en pleno verano, zonas templadas y frías.</p>
+                <p class="mb-3">Recomendamos en épocas de frio traer abrigo y calzado cómodo. Es recomendable traer protector solar, lentes y/o sombrero para los pasajeros que visiten las Salinas Grandes. </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 content-6-left pr-lg-5">          
+                <h3 class="sub-title">Problemas</h3>
+                <h6>¿Qué pasa si luego de la compra necesito modificarla o cancelarla?</h6>
+            </div>
+            <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
+                <p class="mb-3">¡Atención! Hacer un cambio o cancelación en tu reserva puede tener costo adicional, de acuerdo con la política establecida y la flexibilidad de la tarifa que elegiste. En caso que quieras hacer un cambio en tu reserva, también debes considerar la diferencia de tarifa si la nueva opción tiene un costo mayor por actualización de precios.</p>
+                <p class="mb-3">Solo hasta 24hs antes del inicio del tour, se acepta una cancelación sin cargo en servicios terrestres prestados por Pacha Tours. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--/footer main-->
+    <footer>
+        <!-- footer -->
+        <section class="w3l-footer">
+            <div class="w3l-footer-16-main py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 column">
+                            <div class="row">
+                                <div class="col-md-4 column">
+                                    <h3>Pacha Tours</h3>
+                                    <ul class="footer-gd-16">
+                                        <li><a href="home.html">Home</a></li>
+                                        <li><a href="servicios.html">Servicios</a></li>
+                                        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                                        <li><a href="#url">Blog</a></li>
+                                        <li><a href="contacto.html">Contactanos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 column mt-md-0 mt-4">
+                                    <h3>Enlaces útiles</h3>
+                                    <ul class="footer-gd-16">
+                                        <li><a href="#url">Destinos</a></li>
+                                        <li><a href="#url">Pagina de Turismo</a></li>
+                                        <li><a href="#url">Imagenes</a></li>
+                                        <li><a href="about.html">Acerca de Pacha Tours</a></li>
+                                        <li><a href="#url">Nuestros Paquetes</a></li>
+                                    </ul>
+                                </div>                                
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
+                            <h1>PACHA TOURS</h1>
+                            <div class="end-column">
+                                <h4>Obtenga las últimas actualizaciones y ofertas por whatsapp</h4>
+                                <a href="https://api.whatsapp.com/send?phone=5493874838848&text=Hola%20quisiera%20saber%20el%20precio%20de">
+                                    <img id="whatsapp" 
+                                        src="https://travelmaniacoviajes.com.ar/ico/whatsapp.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+                        <div class="columns text-lg-left text-center">
+                            <p> Pacha Tours</p>
+                        </div>
+                        <div class="columns-2 mt-lg-0 mt-3">
+                            <ul class="social">
+                                <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#whatsapp"><span class="fa fa-whatsapp" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mueve arriba -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-angle-up"></span>
+            </button>
+            <script>
+                //Cuando el usuario se desplace 20px hacia abajo desde la parte superior del documento, muestre el botón
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    } else {
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                // Cuando el usuario haga clic en el botón, desplácese hasta la parte superior del documento
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+            <!-- //scroll para arriba -->
+            <script>
+                $(function() {
+                    $('.navbar-toggler').click(function() {
+                        $('body').toggleClass('noscroll');
+                    })
+                });
+            </script>
+        </section>
+        <!-- //footer -->
+    </footer>
+    <!-- Template JavaScript -->
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/theme-change.js"></script>
+    <!--/slider-js-->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+    <script src="~/js/jquery.zoomslider.min.js"></script>
+    <!--//slider-js-->
+    <script src="~/js/owl.carousel.js"></script>
+    <!-- script carousel slider -->
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: true
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script carousel slider -->
+
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+
+    <script src="~/js/bootstrap.min.js"></script>
+</body>    
